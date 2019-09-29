@@ -15,7 +15,8 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      border: 1px solid red; }
       .top_header .box_menu .menu .box_logo {
         display: flex;
         justify-content: space-between;
@@ -38,7 +39,8 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        border: 2px solid coral; }
         .top_header .box_menu .menu .top_nav a {
           color: white;
           text-decoration: none;
