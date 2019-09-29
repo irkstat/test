@@ -1,0 +1,170 @@
+$color_menu: rgb(0, 225, 255);
+
+.top_header{
+   background: url(/img/header_bg.jpg) center no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   .box_menu{
+      width: 100%;
+      height: 70px;
+      border-bottom: 1px solid white;
+      padding: 0 20px;
+      .menu{
+         max-width: 1200px;
+         height: 100%;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .box_logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+            height: 100%;
+            .top_logo{
+               height: 50px;}
+            .txt_logo{
+               color: white;
+               font-size: 46px;
+               &::after{
+                  content: "";
+                  display: block;
+                  width: 70px;
+                  height: 2px;
+                  background: white;}}}
+         //Верхнее меню навигации
+         .top_nav{
+            width: 500px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+               color: white;
+               text-decoration: none;
+               font-family: 'Ubuntu', sans-serif;
+               &:hover{
+                  color: $color_menu;}}}
+         .hamburger_menu{
+            width: 35px;
+            height: 22px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            &:hover .line_hamburger{
+               border: 0.5px solid $color_menu;
+            }
+            .line_hamburger{
+               width: 100%;
+               height: 1px;
+               border: 0.5px solid white;}}}}
+   //Блок приветствие
+   .box_privet{
+      width: 600px;
+      height: calc(100vh - 71px);
+      margin: 0 auto;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .privet{
+         width: 100%;
+         h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 36px;
+            transform: translateY(-50px);
+            animation-name: h1;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;}
+         h2{
+            font-family: 'Open Sans', sans-serif;
+            text-align: right;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 30px;
+            transform: translateY(50px);
+            animation-name: h2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            span{
+               font-weight: bold;
+            }
+         }
+      }
+      .mouse{
+         width: 20px;
+         height: 35px;
+         border: 1px solid white;
+         border-radius: 8px;
+         position: absolute;
+         bottom: 5px;
+         display: flex;
+         justify-content: center;
+         padding-top: 3px;
+         .koleso{
+            width: 4px;
+            height: 9px;
+            background: white;
+            border-radius: 4px;
+            animation-name: koleso;
+            animation-duration: 1.5s;
+            animation-delay: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+         }
+      }
+   }
+   .mobile_menu{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      #m_close{
+         position: absolute;
+         top: 20px;
+         right: 20px;
+      }
+      a{
+         color: white;
+         text-decoration: none;
+         font-family: 'Ubuntu', sans-serif;
+         font-size: 26px;
+         &:hover{
+            color: $color_menu;
+         }
+         &:not(last-child){
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
+
+
+@keyframes h1{
+   100%{
+      transform: translateY(-5px);
+   }
+}
+@keyframes h2{
+   100%{
+      transform: translateY(5px);
+   }
+}
+@keyframes koleso{
+   100%{
+      transform: translateY(7px);
+   }
+}

@@ -1,0 +1,5 @@
+@media screen and (max-width: 992px) {
+  .top_header .box_menu .menu .top_nav {
+    display: none; }
+  .top_header .box_menu .menu .hamburger_menu {
+    display: flex; } }

@@ -1,0 +1,18 @@
+//ЭКРАН КОМПЬЮТЕРА=========================================
+@media screen and (max-width:1200px){}
+
+
+//ЭКРАН ПЛАНШЕТА===========================================
+@media screen and (max-width:992px){
+   .top_header{
+      .box_menu{
+         .menu{
+            .top_nav{
+               display: none;}
+            .hamburger_menu{
+               display: flex;
+            }
+         }
+      }
+   }
+}

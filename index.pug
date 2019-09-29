@@ -1,9 +1,49 @@
 doctype html
 html(lang="ru")
    head
-      title= pageTitle
+      meta(charset="utf-8")
+      meta(name="description" content="Описание страницы")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="/css/reset.css")
+      link(rel="stylesheet", href="/css/style.css")
+      link(rel="stylesheet", href="/css/media.css")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap")
+      link(rel="icon", href="/img/favicon.png")
+      title Сайт на PUG
    body
-      h1 Pug - node template engine
-      #container.col
-      p.txt_1
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iusto?cd..
+      //ХЕДЕР==============================================
+      header.top_header
+         .box_menu
+            .menu
+               .box_logo
+                  img.top_logo(src="/img/logo8.svg", alt="")
+                  p.txt_logo Irkstat.
+               //Верхнее меню навигации====================
+               nav.top_nav
+                  a(href="#") Главная
+                  a(href="#") Статистика
+                  a(href="#") Анализ
+                  a(href="#") Блог
+                  a(href="#") Помощь
+               .hamburger_menu(id="h_menu")
+                  .line_hamburger
+                  .line_hamburger
+                  .line_hamburger
+         .box_privet
+            .privet
+               h1 Недвижимость #[br] Иркутска
+               hr.polosa_privet
+               h2 Статистика рынка #[br] #[span недвижимости]
+            .mouse
+               .koleso
+         nav.mobile_menu(id="m_menu")
+            a(href="#" id="m_close") X
+            a(href="#") Главная
+            a(href="#") Статистика
+            a(href="#") Анализ
+            a(href="#") Блог
+            a(href="#") Помощь
+
+
+      script(src="/js/menu.js")
