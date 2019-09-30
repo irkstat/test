@@ -1,0 +1,38 @@
+.box_pre_mix{
+   padding: 50px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   .pre{
+      width: 500px;
+      height: 300px;
+      border: 1px solid firebrick;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+   }
+   .mix{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 300px;
+      border: 1px solid navy;
+      background: white;
+      .square_black{
+         width: 150px;
+         height: 150px;
+         background: black;
+      }
+      .txt_hello{
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 60px;
+         font-weight: bold;
+         transform: translateX(-70px);
+         mix-blend-mode: difference;
+         color: white;
+      }
+   }
+}
