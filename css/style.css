@@ -148,3 +148,85 @@
 @keyframes koleso {
   100% {
     transform: translateY(7px); } }
+
+.main_article {
+  padding: 50px 0;
+  background: #eeeeee; }
+  .main_article h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+    .main_article h3::before {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      border: 0.5px solid black;
+      vertical-align: middle; }
+    .main_article h3::after {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      border: 0.5px solid black;
+      vertical-align: middle; }
+  .main_article .box_new {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .main_article .box_new .box_zag {
+      width: 100%;
+      height: 500px; }
+      .main_article .box_new .box_zag .img_zag {
+        width: 100%;
+        height: 400px;
+        background: url(/img/gl-new1.jpg) center no-repeat;
+        background-size: cover; }
+      .main_article .box_new .box_zag .txt_zag {
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to top, #1b1b1b, #313131);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px; }
+        .main_article .box_new .box_zag .txt_zag .name_zag {
+          color: white;
+          font-size: 36px;
+          text-transform: uppercase;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        .main_article .box_new .box_zag .txt_zag .number_zag {
+          color: greenyellow;
+          font-size: 50px; }
+    .main_article .box_new .box_text {
+      width: 100%;
+      padding: 20px 10px;
+      background: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .main_article .box_new .box_text h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px; }
+      .main_article .box_new .box_text .txt_1 {
+        margin-bottom: 20px; }
+        .main_article .box_new .box_text .txt_1::first-letter {
+          font-size: 30px;
+          color: fuchsia;
+          font-weight: bold; }
+        .main_article .box_new .box_text .txt_1::first-line {
+          font-weight: bold; }
+      .main_article .box_new .box_text .txt_2 {
+        word-spacing: 40px;
+        letter-spacing: 10px;
+        margin-bottom: 20px; }
+        .main_article .box_new .box_text .txt_2::before {
+          content: "Before";
+          color: mediumvioletred;
+          font-weight: bold; }
+        .main_article .box_new .box_text .txt_2::after {
+          content: "After";
+          color: mediumvioletred;
+          font-weight: bold; }
+      .main_article .box_new .box_text .txt_3 {
+        margin-bottom: 20px;
+        font: bold italic 16px/2 arial,sans-serif; }
