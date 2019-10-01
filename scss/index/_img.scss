@@ -1,0 +1,18 @@
+.box_image{
+   padding: 50px 0;
+   background: rgb(162, 233, 114);
+   display: flex;
+   justify-content: space-around;
+   .img_fil{
+      width: 350px;
+      &:hover{
+         filter: grayscale(2);
+      }
+   }
+   figcaption{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: rgb(53, 53, 53);
+   }
+}

@@ -264,3 +264,18 @@
       transform: translateX(-70px);
       mix-blend-mode: difference;
       color: white; }
+
+.box_image {
+  padding: 50px 0;
+  background: #a2e972;
+  display: flex;
+  justify-content: space-around; }
+  .box_image .img_fil {
+    width: 350px; }
+    .box_image .img_fil:hover {
+      filter: grayscale(2); }
+  .box_image figcaption {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #353535; }
