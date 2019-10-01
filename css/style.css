@@ -279,3 +279,47 @@
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     color: #353535; }
+
+.grad {
+  padding: 50px 0;
+  background: #f1f1f1; }
+  .grad .grad_lin_red {
+    display: flex;
+    justify-content: space-around; }
+    .grad .grad_lin_red .boxgrad {
+      width: 150px;
+      height: 150px;
+      border: 1px solid black; }
+    .grad .grad_lin_red .grd_1 {
+      background-image: linear-gradient(to top, red 60%, green); }
+    .grad .grad_lin_red .grd_2 {
+      background-image: linear-gradient(to top, red, blue); }
+    .grad .grad_lin_red .grd_3 {
+      background-image: linear-gradient(45deg, red, green); }
+    .grad .grad_lin_red .grd_4 {
+      background-image: radial-gradient(red, green); }
+    .grad .grad_lin_red .grd_5 {
+      background-image: radial-gradient(circle at 50px 20px, red 5%, green 10%); }
+  .grad .grad-repeat {
+    display: flex;
+    justify-content: space-around; }
+    .grad .grad-repeat .boxgrad {
+      width: 150px;
+      height: 150px;
+      border: 1px solid black; }
+    .grad .grad-repeat .gradient_1 {
+      background-image: repeating-linear-gradient(45deg, green 0, white 30px); }
+    .grad .grad-repeat .gradient_2 {
+      background-image: repeating-linear-gradient(90deg, white 0, white 10px, green 10px, green 20px); }
+    .grad .grad-repeat .gradient_3 {
+      background-image: repeating-linear-gradient(360deg, blue 0, blue 33.3%, red 33.3%, red 66.6%, white 66.6%, white 100%); }
+    .grad .grad-repeat .gradient_4 {
+      background-image: repeating-linear-gradient(90deg, gray 0, transparent 0, transparent 20px, gray 20px, gray 21px), repeating-linear-gradient(gray 0, transparent 0, transparent 20px, gray 20px, gray 21px); }
+    .grad .grad-repeat .gradient_5 {
+      background-image: repeating-linear-gradient(90deg, gray 0, transparent 0, transparent 20px, gray 20px, gray 21px), repeating-linear-gradient(90deg, gray 0, transparent 0, transparent 20px, gray 20px, gray 21px);
+      background-size: 100%, 100% 50%;
+      background-position: 0 0, 10px center;
+      background-repeat: repeat-x, repeat-x; }
+    .grad .grad-repeat .gradient_6 {
+      border: 10px solid transparent;
+      border-image: repeating-linear-gradient(45deg, white 0, white 5px, blue 5px, blue 10px, red 10px, red 15px) 10; }
