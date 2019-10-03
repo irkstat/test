@@ -408,3 +408,23 @@
     .num_table .box_table table th, .num_table .box_table table td {
       border: 1px solid gray;
       height: 35px; }
+
+.link {
+  padding: 50px 0; }
+  .link .box_link {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px  10px black; }
+    .link .box_link a:link {
+      color: #31acac; }
+    .link .box_link a:visited {
+      color: firebrick; }
+    .link .box_link a:active {
+      color: black;
+      font-weight: bold; }
+    .link .box_link a:hover {
+      color: #becf22; }

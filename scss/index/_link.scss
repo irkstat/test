@@ -1,0 +1,25 @@
+.link{
+   padding: 50px 0;
+   .box_link{
+      width: 400px;
+      height: 100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0px 0px  10px black;
+      a:link{
+         color: rgb(49, 172, 172);
+      }
+      a:visited{
+         color: firebrick;
+      }
+      a:active{
+         color: black;
+         font-weight: bold;
+      }
+      a:hover{
+         color: rgb(190, 207, 34);
+      }
+   }
+}
