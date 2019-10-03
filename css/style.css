@@ -428,3 +428,80 @@
       font-weight: bold; }
     .link .box_link a:hover {
       color: #becf22; }
+
+.frm {
+  padding: 50px 0;
+  background: #a5a5a5; }
+  .frm .name_form {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .frm .box_form {
+    width: 800px;
+    margin: 0 auto; }
+    .frm .box_form .box_name {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      .frm .box_form .box_name input {
+        width: 390px;
+        height: 45px;
+        background: #a5a5a5;
+        border: 2px solid #a5a5a5;
+        border-bottom: 2px solid black;
+        padding-left: 5px; }
+        .frm .box_form .box_name input::placeholder {
+          color: black;
+          font-style: italic; }
+        .frm .box_form .box_name input:focus {
+          background: #b3b3b3; }
+        .frm .box_form .box_name input:hover {
+          border: 2px solid #00fff2; }
+    .frm .box_form .main_text {
+      width: 100%;
+      height: 200px;
+      background: #a5a5a5;
+      border: 2px solid #a5a5a5;
+      border-bottom: 2px solid black; }
+      .frm .box_form .main_text:hover {
+        border: 2px solid #00fff2; }
+    .frm .box_form .btn {
+      border: 1px solid black;
+      display: block;
+      width: 100px;
+      height: 40px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 20px; }
+      .frm .box_form .btn:hover {
+        border: 2px solid #00fff2; }
+
+.footer_general {
+  padding: 50px 0;
+  background: #252525;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px; }
+  .footer_general a {
+    color: white;
+    text-decoration: none; }
+    .footer_general a:hover {
+      color: aqua;
+      transition-duration: 0.5s; }
+  .footer_general .box_social {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }

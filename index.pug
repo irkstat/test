@@ -170,6 +170,17 @@ html(lang="ru")
             a(href="#jack") Якорь
             a(href="mailto:as@yandex.ru") Почта
             a(href="#" download="down") Скачать
+      section.frm
+         p.name_form Contact
+         .box_form
+            form(action="#" method="post")
+               .box_name
+                  input(type="text" placeholder="Name")
+                  input(type="email" placeholder="Email")
+               textarea.main_text(name="main" placeholder="Message")
+               a.btn(href="#") Send
+      //ФУТЕР==============================================
+      include pug_modules/footer.pug
 
 
 
