@@ -1,0 +1,55 @@
+@mixin table {
+   width: 600px;
+   height: 450px;
+   border: 1px solid navy;
+   background: white;
+   box-shadow: 5px 5px 4px rgb(70, 70, 70);
+}
+
+.num_table{
+   padding: 50px 0;
+   display: flex;
+   justify-content: space-around;
+   background: rgb(228, 228, 228);
+   .box_num{
+      @include table();
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      .num_1{
+         border: 1px solid red;
+         .ol_1{
+            list-style-position: inside;
+            list-style-type: upper-latin;
+            margin-bottom: 20px;}
+         .ul_1{
+            list-style-position: inside;
+            list-style-type: square;}}
+      .num_2{
+         border: 1px solid fuchsia;
+         .ol_2{
+            font-weight: bold;
+            list-style-position: inside;
+            list-style-type: upper-roman;
+            .ul_2{
+               font-weight: normal;
+               list-style-image: url(/img/galochka.png);
+            }
+         }
+      }
+   }
+   .box_table{
+      table{
+         border: 1px solid gray;
+         width: 600px;
+         background: white;
+         border-collapse: collapse;
+         text-align: center;
+         th, td{
+            border: 1px solid gray;
+            height: 35px;
+         }
+      }
+   }
+}

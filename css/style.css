@@ -365,3 +365,46 @@
   .transform .bgrd_7:hover .trans_7 {
     transform: translate(50px, -50px);
     transition-duration: 2s; }
+
+.num_table {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  background: #e4e4e4; }
+  .num_table .box_num {
+    width: 600px;
+    height: 450px;
+    border: 1px solid navy;
+    background: white;
+    box-shadow: 5px 5px 4px #464646;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; }
+    .num_table .box_num .num_1 {
+      border: 1px solid red; }
+      .num_table .box_num .num_1 .ol_1 {
+        list-style-position: inside;
+        list-style-type: upper-latin;
+        margin-bottom: 20px; }
+      .num_table .box_num .num_1 .ul_1 {
+        list-style-position: inside;
+        list-style-type: square; }
+    .num_table .box_num .num_2 {
+      border: 1px solid fuchsia; }
+      .num_table .box_num .num_2 .ol_2 {
+        font-weight: bold;
+        list-style-position: inside;
+        list-style-type: upper-roman; }
+        .num_table .box_num .num_2 .ol_2 .ul_2 {
+          font-weight: normal;
+          list-style-image: url(/img/galochka.png); }
+  .num_table .box_table table {
+    border: 1px solid gray;
+    width: 600px;
+    background: white;
+    border-collapse: collapse;
+    text-align: center; }
+    .num_table .box_table table th, .num_table .box_table table td {
+      border: 1px solid gray;
+      height: 35px; }
