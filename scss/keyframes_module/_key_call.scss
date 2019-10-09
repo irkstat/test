@@ -1,0 +1,189 @@
+$color_call: rgb(56, 235, 220);
+.call{
+   height: 350px;
+   display: flex;
+   .box_call{
+      border: 1px solid blueviolet;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .square{
+         width: 150px;
+         height: 150px;
+         background: violet;
+         animation-name: kv;
+         animation-duration: 10s;
+         animation-delay: 0.5s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+      }
+      .circle{
+         width: 100px;
+         height: 100px;
+         background: $color_call;
+         border-radius: 50%;
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         &:before{
+            content: "";
+            width: 99%;
+            height: 99%;
+            border: 1px solid $color_call;
+            display: block;
+            border-radius: 50%;
+            position: absolute;}
+         &:after{
+            content: "";
+            width: 99%;
+            height: 99%;
+            border: 1px solid $color_call;
+            display: block;
+            border-radius: 50%;
+            position: absolute;}
+         &:hover::before{
+            animation-name: bef;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            opacity: 0;}
+         &:hover::after{
+            animation-name: aft;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+            opacity: 0;}
+         &:hover .img_trubka{
+           transform: scale(0);
+           transition-duration: 1.5s;}
+         &:hover .txt_01{
+            opacity: 1;
+            transform: rotateY(0);
+            transition-duration: 1.5s;}
+         .box_trubka{
+            position: absolute;
+            animation-name: box_trubka;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;}
+         .txt_01{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            transform: rotatey(180deg);
+            opacity: 0;}}
+      .fint{
+         width: 170px;
+         height: 300px;
+         background: navy;
+         transform:  rotateX(66deg) rotateY(2deg) rotateZ(-37deg);
+         transform-style: preserve-3d;
+         &:hover .fi_1{
+            transform:  translateZ(100px);
+            transition-duration: 3s;}
+         &:hover .fi_2{
+            transform:  translateZ(80px);
+            transition-duration: 3s;
+            opacity: 0.8}
+         &:hover .fi_3{
+            transform:  translateZ(60px);
+            transition-duration: 3s;
+            opacity: 0.6;}
+         &:hover .fi_4{
+            transform:  translateZ(40px);
+            transition-duration: 3s;
+            opacity: 0.4;}
+         &:hover .fi_5{
+            transform:  translateZ(20px);
+            transition-duration: 3s;
+            opacity: 0.2;}
+         .fint_img{
+            background: url(/img/Slaider2_Kartochka1-01.png) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;}}
+      .box_green{
+         width: 250px;
+         height: 150px;
+         background: rgb(41, 255, 148);
+         &:hover .b_rgr{
+            transform: translate(-50px, -50px);
+            transition-duration: 1.5s;
+         }
+         &:hover .b_img{
+            opacity: 0.2;
+            transition-duration: 1.5s;
+         }
+         .b_rgr{
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            width: 100%;
+            height: 100%;
+            .b_img{
+               width: 100%;
+               height: 100%;
+               background: url(/img/k4.jpg) center no-repeat;
+               background-size: cover;
+            }
+         }
+      }
+   }
+}
+//Анимация кругов
+@keyframes bef{
+   100%{
+      transform: scale(1.6);
+      opacity: 1;
+   }
+}
+@keyframes aft{
+   100%{
+      transform: scale(1.7);
+      opacity: 1;
+   }
+}
+
+//Анимация трубки
+@keyframes box_trubka{
+   0%{
+      transform: rotate(0);
+   }
+   33%{
+      transform: rotate(-21deg);
+   }
+   66%{
+      transform: rotate(35deg);
+   }
+   100%{
+      transform: rotate(0deg);
+   }
+}
+
+
+
+
+
+
+
+
+@keyframes kv{
+   0%{
+      transform: rotate(0)}
+   25%{
+      transform: rotate(45deg);
+      border-radius: 50% 0 0 0;}
+   50%{
+      transform: rotate(90deg);
+      border-radius: 50% 50% 0 0;}
+   75%{
+      transform: rotate(135deg);
+      border-radius: 50% 50% 50% 0;}
+   100%{
+      transform: rotate(180deg);
+      border-radius: 50% 50% 50% 50%;}}
